@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./Main.css" />
+  </head>
+  <body>
+    <div class="MainContainer">
+      <div class="ResultContainer">
+        <div class="ResultCard">
+          <h1 class="ResultCard-Heading">Your Result</h1>
+
+          <div class="CircleScore">
+            <p class="GetScore">76</p>
+            <span class="TotalMarks"> of 100</span>
+          </div>
+
+          <p class="AppriciationMsg">Great</p>
+          <p class="AppriciationMsg2">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <div class="ScoreCard">
+          <h2>Summary</h2>
+
+          <div class="ReactionScoreBox IndividualScoreBox">
+            <div class="Icon-Name">
+              <img src="./images/icon-reaction.svg" alt="Score-Icon" />
+              <p class="ScoreName">Reaction</p>
+            </div>
+            <p class="scoreText"><span class="FinalScore">80</span> /100</p>
+          </div>
+
+          <div class="MemoryScoreBox IndividualScoreBox">
+            <div class="Icon-Name">
+              <img src="./images/icon-memory.svg" alt="Score-Icon" />
+              <p class="ScoreName">Memory</p>
+            </div>
+            <p class="scoreText"><span class="FinalScore">92</span> /100</p>
+          </div>
+
+          <div class="VerbalScoreBox IndividualScoreBox">
+            <div class="Icon-Name">
+              <img src="./images/icon-verbal.svg" alt="Score-Icon" />
+              <p class="ScoreName">Verbal</p>
+            </div>
+            <p class="scoreText"><span class="FinalScore">61</span> /100</p>
+          </div>
+
+          <div class="VisualScoreBox IndividualScoreBox">
+
+            <div class="Icon-Name">
+              <img src="./images/icon-visual.svg" alt="Score-Icon" />
+              <p class="ScoreName">Visual</p>
+            </div>
+            <p class="scoreText"><span class="FinalScore">72</span> /100</p>
+          </div>
+          <button id="ContinueButton">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <p>
+        Challenge by:
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by:
+        <a href="https://github.com/AnshumanMahi7781" class="DeveloperName"
+          >Anshuman</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

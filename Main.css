@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.MainContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+.MainContainer .ResultContainer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: auto;
+  width: 550px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.MainContainer .ResultContainer .ResultCard {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2em;
+  gap: 20px;
+}
+.MainContainer .ResultContainer .ResultCard .ResultCard-Heading {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+  font-weight: 500;
+}
+.MainContainer .ResultContainer .ResultCard .CircleScore {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  padding: 2em;
+}
+.MainContainer .ResultContainer .ResultCard .CircleScore .GetScore {
+  font-size: 50px;
+  font-weight: 700;
+}
+.MainContainer .ResultContainer .ResultCard .CircleScore .TotalMarks {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+.MainContainer .ResultContainer .ResultCard .AppriciationMsg {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.MainContainer .ResultContainer .ResultCard .AppriciationMsg2 {
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+  font-weight: 500;
+}
+.MainContainer .ResultContainer .ScoreCard {
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.MainContainer .ResultContainer .ScoreCard .ReactionScoreBox {
+  background-color: rgba(255, 87, 87, 0.1);
+  border: 1px solid rgba(255, 87, 87, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.MainContainer .ResultContainer .ScoreCard .MemoryScoreBox {
+  background-color: rgba(255, 177, 31, 0.1);
+  border: 1px solid rgba(255, 177, 31, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.MainContainer .ResultContainer .ScoreCard .VerbalScoreBox {
+  background-color: rgba(0, 189, 145, 0.1);
+  border: 1px solid rgba(0, 189, 145, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.MainContainer .ResultContainer .ScoreCard .VisualScoreBox {
+  background-color: rgba(17, 37, 212, 0.1);
+  border: 1px solid rgba(17, 37, 212, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.MainContainer .ResultContainer .ScoreCard #ContinueButton {
+  border: none;
+  width: 100%;
+  padding: 0.95em;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.MainContainer .ResultContainer .ScoreCard #ContinueButton:hover {
+  cursor: pointer;
+  background-color: hsl(241, 81%, 54%);
+}
+.MainContainer .ResultContainer .ScoreCard .IndividualScoreBox, .MainContainer .ResultContainer .ScoreCard .IndividualScoreBox .Icon-Name {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.MainContainer .ResultContainer .ScoreCard .IndividualScoreBox .Icon-Name {
+  justify-content: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+.MainContainer .ResultContainer .ScoreCard .IndividualScoreBox .scoreText {
+  width: 50%;
+  text-align: right;
+  color: gray;
+}
+.MainContainer .ResultContainer .ScoreCard .IndividualScoreBox .scoreText .FinalScore {
+  color: hsl(224, 30%, 27%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 1em;
+}
+
+.attribution a {
+  color: orange;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .MainContainer {
+    height: 100vh;
+  }
+  .MainContainer .ResultContainer {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+  .MainContainer .ResultContainer .ResultCard {
+    width: 100%;
+    height: 40%;
+    padding: 2em 0em;
+    gap: 5px;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .MainContainer .ResultContainer .ResultCard .ResultCard-Heading {
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .MainContainer .ResultContainer .ResultCard .CircleScore {
+    width: 100px;
+    height: 100px;
+  }
+  .MainContainer .ResultContainer .ResultCard .CircleScore .GetScore {
+    font-size: 30px;
+  }
+  .MainContainer .ResultContainer .ResultCard .CircleScore .TotalMarks {
+    font-size: 12px;
+  }
+  .MainContainer .ResultContainer .ResultCard .AppriciationMsg {
+    font-size: 16px;
+  }
+  .MainContainer .ResultContainer .ResultCard .AppriciationMsg2 {
+    font-size: 14px;
+  }
+  .MainContainer .ResultContainer .ScoreCard {
+    width: 100%;
+    height: 60%;
+  }
+  .MainContainer .ResultContainer .ScoreCard .IndividualScoreBox, .MainContainer .ResultContainer .ScoreCard .IndividualScoreBox .Icon-Name {
+    height: 45px;
+  }
+  .attribution {
+    display: none;
+  }
+}/*# sourceMappingURL=Main.css.map */
